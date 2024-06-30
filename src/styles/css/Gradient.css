@@ -1,0 +1,60 @@
+.gradient {
+  min-height: 100dvh;
+  min-width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#cc0202), to(#01052b));
+  background: linear-gradient(90deg, #cc0202, #01052b);
+  background-size: 400% 400%;
+  -webkit-animation: AnimateGradient 5s ease infinite;
+          animation: AnimateGradient 5s ease infinite;
+}
+
+@-webkit-keyframes AnimateGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimateGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.button-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sample-background {
+  background-color: #cc0202;
+  min-height: 100dvh;
+  width: 100dvw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

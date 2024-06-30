@@ -1,0 +1,30 @@
+.first-letter {
+    color: yellow;
+    font-size: 100px;
+    font-family: 'Roboto';
+}
+
+.second-letter {
+    color: yellow;
+    font-size: 100px;
+    font-family: 'Roboto';
+}
+
+.letters-container {
+    display: flex;
+    min-height: 100%;
+    align-items: center;
+    vertical-align: middle;
+    // justify-content: center;
+    position: relative; /* Добавляем для относительного позиционирования */
+}
+
+.first-letter, .second-letter {
+    margin: 0 5px; /* Adjust spacing between letters if needed */
+}
+
+.big-container {
+    position: absolute;
+    // left: 50%;
+    top: 45dvh;
+}

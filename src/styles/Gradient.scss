@@ -1,0 +1,43 @@
+.gradient {
+    min-height: 100dvh;
+    min-width: 100%;
+    background: linear-gradient(90deg, #cc0202, #01052b);
+    background-size: 400% 400%;
+    // content: "";
+
+    animation: AnimateGradient 5s ease infinite;
+  }
+
+  @keyframes AnimateGradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .button-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sample-background {
+    background-color: #cc0202;
+    min-height: 100dvh;
+    width: 100dvw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
