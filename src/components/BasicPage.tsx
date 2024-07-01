@@ -3,7 +3,7 @@ import '../styles/css/BasicPage.css'
 
 const BasicPage = () => {
     return (
-        <div className="page"></div>
+        <div className="page">Тут должна быть страница. Мяу!</div>
     );
 };
 

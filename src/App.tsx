@@ -1,13 +1,13 @@
 // import React from 'react';
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+// import { useState } from 'react';
+// import { motion, AnimatePresence } from 'framer-motion';
 import Gradient from './components/Gradient';
 import Logo from './components/Logo';
 import BasicPage from './components/BasicPage';
 
 function App() {
   const isVisible = false; 
-  const isLoaderVisible = true;
+  // const isLoaderVisible = true;
   // const [isLoaderVisible, setLoaderVisibility ] = useState(true);
 
   // setTimeout(() => {
@@ -16,7 +16,7 @@ function App() {
 
   return (
     <>
-      <AnimatePresence> 
+      {/* <AnimatePresence> 
         { isLoaderVisible && (
           <motion.div
           initial={{ opacity: 1 }}
@@ -25,7 +25,9 @@ function App() {
             <Logo isVisible={isVisible} />
           </motion.div>
         )}
-      </AnimatePresence>
+      </AnimatePresence> */}
+      <Gradient />
+      <Logo isVisible={isVisible}  />
       <BasicPage />
     </>
   );

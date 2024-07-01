@@ -17,9 +17,9 @@ const Button: React.FC<ButtonProps> = ({ onClick }) => {
                 onClick={() => {
                     onClick();
                     setIsVisible(false);
-                    setTimeout(() => {
-                        setIsVisible(true);
-                    }, 3000)
+                    // setTimeout(() => {
+                    //     setIsVisible(true);
+                    // }, 3000)
                 }}
                 className="btn"
                 initial={{ scale: 0 }}
