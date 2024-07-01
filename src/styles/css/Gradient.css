@@ -4,8 +4,8 @@
   background: -webkit-gradient(linear, left top, right top, from(#cc0202), to(#01052b));
   background: linear-gradient(90deg, #cc0202, #01052b);
   background-size: 400% 400%;
-  -webkit-animation: AnimateGradient 5s ease infinite;
-          animation: AnimateGradient 5s ease infinite;
+  -webkit-animation: AnimateGradient 2s ease infinite;
+          animation: AnimateGradient 2s ease infinite;
 }
 
 @-webkit-keyframes AnimateGradient {

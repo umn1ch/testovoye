@@ -13,11 +13,11 @@ const Gradient: React.FC = () => {
         setTimeout(() => {
             setIsGradient(false);
             setIsLogoVisible(false);
-        }, 10000);
+        }, 3000);
 
         setTimeout(() => {
             setIsLogoVisible(true);
-        }, 2500);
+        }, 1000);
     };
 
     return (

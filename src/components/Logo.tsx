@@ -15,9 +15,9 @@ const Logo: React.FC<LogoProps> = ({ isVisible }) => {
         const sequence = async () => {
             if (isVisible) {
                 setShowT(true);
-                await controlsB.start({ x: '95vw', transition: { type: 'tween', duration: 2.5 } });
-                controlsB.start({ x: '46vw', transition: { type: 'tween', duration: 2.5 } });
-                controlsT.start({ x: '46vw', transition: { type: 'tween', duration: 2.5 } });
+                await controlsB.start({ x: '95vw', transition: { type: 'tween', duration: 1 } });
+                controlsB.start({ x: '45vw', transition: { type: 'tween', duration: 1 } });
+                controlsT.start({ x: '45vw', transition: { type: 'tween', duration: 1 } });
             }
         };
 
@@ -33,7 +33,7 @@ const Logo: React.FC<LogoProps> = ({ isVisible }) => {
                             className="first-letter"
                             initial={{ x: '-100vw' }}
                             animate={controlsB}
-                            exit={{ opacity: 0, transition: { duration: 1 } }}
+                            exit={{ opacity: 0, transition: { duration: 0.5 } }}
                         >
                             B
                         </motion.div>
@@ -42,7 +42,7 @@ const Logo: React.FC<LogoProps> = ({ isVisible }) => {
                                 className="second-letter"
                                 initial={{ x: '100vw' }}
                                 animate={controlsT}
-                                exit={{ opacity: 0, transition: { duration: 1 } }}
+                                exit={{ opacity: 0, transition: { duration: 0.5 } }}
                             >
                                 T
                             </motion.div>
