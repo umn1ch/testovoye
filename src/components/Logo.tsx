@@ -1,8 +1,12 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, useAnimation, AnimatePresence } from "framer-motion";
 import '../styles/css/Logo.css';
 
-const Logo = ({ isVisible }) => {
+interface LogoProps  {
+    isVisible: boolean;
+}
+
+const Logo: React.FC<LogoProps> = ({ isVisible }) => {
     const controlsB = useAnimation();
     const controlsT = useAnimation();
     const [showT, setShowT] = useState(false);
